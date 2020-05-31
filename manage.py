@@ -18,16 +18,14 @@ manager.add_command('db', MigrateCommand)
 
 @manager.command
 def seed():
+	Artist(name='The Beatles').insert()
+	Artist(name='Pink Floyd').insert()
 
-
-Artist(name='The Beatles').insert()
-Artist(name='Pink Floyd').insert()
-
-Album(title='Abbey Road', year='1969', artist='The Beatles').insert()
-Album(
-    title='Dark Side of the Moon',
-    year='1973',
-    artist='Pink Floyd').insert()
+	Album(title='Abbey Road', year='1969', artist='The Beatles').insert()
+	Album(
+	    title='Dark Side of the Moon',
+	    year='1973',
+	    artist='Pink Floyd').insert()
 
 
 if __name__ == '__main__':

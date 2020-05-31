@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, Integer, DateTime
 from flask_sqlalchemy import SQLAlchemy
 
 # get database details from environment variables
-dev_db_url = os.environ['DEV_DATABASE_URL']
+dev_db_url = os.environ['DATABASE_URL']
 test_db_url = os.environ['TEST_DATABASE_URL']
 env = os.environ['FLASK_ENV']
 

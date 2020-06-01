@@ -93,7 +93,7 @@ def create_app(test_config=None):
                 album.year = data.get('year')
 
             if artist in data:
-                album.artist = data.get('artist', None)
+                album.artist = data.get('artist')
 
             album.update()
             return jsonify({
@@ -178,9 +178,10 @@ def create_app(test_config=None):
             abort(404)
 
         try:
-
             if name in data:
                 artist.name = data.get('name')
+
+            print(artist.name)
 
             artist.update()
             return jsonify({

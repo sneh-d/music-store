@@ -1,0 +1,829 @@
+{
+	"info": {
+		"_postman_id": "46ffb362-7bed-4e5c-89e6-b247deb5a349",
+		"name": "music-store-Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Manager",
+			"item": [
+				{
+					"name": "/albums",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/albums",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/artists",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/artists/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/albums/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Evolve\",\n\t\"year\": \"2017\",\n\t\"artist\": \"Imagine Dragons\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/albums",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Imagine Dragons\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/artists",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"year\": \"2006\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/albums/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"John Lenon\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/artists/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/albums/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/artists/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNWM3OTJkY2U4MGM2ZjE4NDFiOSIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDI3MzIsImV4cCI6MTU5MTAyOTEzMiwiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphbGJ1bXMiLCJkZWxldGU6YXJ0aXN0cyIsImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyIsInBhdGNoOmFsYnVtcyIsInBhdGNoOmFydGlzdHMiLCJwb3N0OmFsYnVtcyIsInBvc3Q6YXJ0aXN0cyJdfQ.C06D8i4Shv4upj6OUJ0LnHElk57Ce0JdwOFUH5tv45wp_pF0cXjMhCEM4QpoOpsaJJ5DPHwkAuovDjuJ7O0kWXFgwoava8yT-aC4d1X-615IjCx7EhUhmlH6KmldbgdJSOcj-qjbm4M4Nr71D-9Rsv32GbgXdSV0qC-ZDsKX_-h7xSj4Y8VGROpHtan5kByoAbTxpQTE0-ZadrHCtYZoFYjGKYe7ZLp9dhu2NCqgla9J1yJn1KmnSIa7s06G_2WKoV-1P5x_awRlkHH5xTZ23slMEaQhYgpyCQoEhUUAOty8S3lzKktHZ1jXfMTkngYORQ4JajbFSF_GtKgQB9iexg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "419b9eb1-356d-4b4d-9232-291f036d776e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3db7f04-c876-4a6c-a2ec-ab4330da1bd8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "/albums",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/albums",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/artists",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/artists/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/albums/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Evolve\",\n\t\"year\": \"2017\",\n\t\"artist\": \"Imagine Dragons\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/albums",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Imagine Dragons\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/artists",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"year\": \"2006\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/albums/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"John Lenon\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{host}}/artists/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/albums/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/albums/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/artists/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/artists/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"artists",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IllXYWdaWFItXzBFdlNyM280RGlLZyJ9.eyJpc3MiOiJodHRwczovL2ZzbmRjb2ZmZWUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlY2FjNjRlZWU1NmM0MGM2ZDg1N2ZlNyIsImF1ZCI6Im11c2ljc3RvcmUiLCJpYXQiOjE1OTA5NDYzODcsImV4cCI6MTU5MTAzMjc4NywiYXpwIjoidTQzTEZ5Sk1EMVNOWlBPMHZBenE1M3gwT2Z5aGdtb24iLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphbGJ1bXMiLCJnZXQ6YXJ0aXN0cyJdfQ.BS-42jRG4RwEWstgJyKaKXI7ye6cCiuenglyyrO_NvVMGTEa_IZ3VbhHkr1zYQdoO11kIbfmrkVSoUH7lhB9d830W68hJEFEaNvEWhN0ekzaXYS0DlgPjdgKynCL33hWhtKPI11LlyC5GgB4SG29wZfahznwW69bt7MmNHISu6Q-PIw_TXk1HrovrjsUuYf1-H3OGNU6T_r1MaMOvUKx_RXJfpJjDMv7r27HrWe_-gigszPtP6qG5Qc4xAnxDDT67JNWBql3AEjP33pfwDD17JRL4wxmoCBeIulrGKpCqlpxgu0g63xdLw2FAjKYxQ_FsiMH32ZKFIWmUD9ENKqrFw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "419b9eb1-356d-4b4d-9232-291f036d776e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3db7f04-c876-4a6c-a2ec-ab4330da1bd8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8eb822fc-5e24-42af-9e8d-76f60afbd2e2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1c75ee8f-5094-47a4-9ba1-4bac5e3bf65d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "6ce1baa2-9a83-4e6a-bd0a-c6c4841f92cb",
+			"key": "host",
+			"value": "https://music-store-97.herokuapp.com",
+			"type": "string"
+		}
+	]
+}

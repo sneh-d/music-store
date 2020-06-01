@@ -86,13 +86,13 @@ def create_app(test_config=None):
 
         try:
 
-            if title in data:
+            if 'title' in data:
                 album.title = data.get('title')
 
-            if year in data:
+            if 'year' in data:
                 album.year = data.get('year')
 
-            if artist in data:
+            if 'artist' in data:
                 album.artist = data.get('artist')
 
             album.update()
@@ -171,18 +171,18 @@ def create_app(test_config=None):
     @requires_auth('patch:artists')
     def patch_artist(jwt, id):
         data = request.get_json()
-
+        name = data.get('name', None)
         artist = Artist.query.filter(Artist.id == id).one_or_none()
 
         if artist is None:
             abort(404)
 
+        if name is None:
+            abort(400)
+
         try:
-            if name in data:
-                artist.name = data.get('name')
-
-            print(artist.name)
-
+            if 'name' in data:
+                artist.name = name
             artist.update()
             return jsonify({
                 'success': True,

@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT app:create_app
+web: gunicorn -b 127.0.0.1:$PORT app:create_app
